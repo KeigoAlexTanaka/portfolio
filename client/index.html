@@ -9,131 +9,151 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
-
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-
-        <section>
-            <div class="d-grid">
-                <h1>Keigo Alex Tanaka</h1>
-                <ul class="d-grid">
-                <a href="index.html" style="text-decoration: none"><li>Works</li></a>
-                <a href="./pages/about.html" style="text-decoration: none"><li>About Me</li></a>
-                <a href="./pages/contact.html" style="text-decoration: none"><li>Contact</li></a>
-            </ul>
-        </div>
-        </section>
-
-        <section>
-            <div class="grid-12 project project-left">
-                <div class="box">
-                    <img src="https://i.imgur.com/vMMaxrL.png" alt="">
-                    <div class="overlay1"></div>
+        <div class="flex-row">
+            <div class="bg-1">
+                <div class="sidebar">
+                    <h1>KEIGO ALEX TANAKA</h1>
+                    <h4>SOFTWARE DEVELOPER</h4>
                 </div>
-                <div class="project-info">
-                    <p class="small-title">Website</p>
-                    <h4>Yumble</h4>
-                    <a href="http://yumble.surge.sh" class="project-link">See Project</a>
-                </div>                
+                <br/>
+                <div class="list">
+                        <a href="./pages/about.html"><li style="list-style-type:none">ABOUT ME</li></a>
+                    </div>
+                <div class="list">
+                    <a href="index.html"><li style="list-style-type:none">WORKS</li></a>
+                </div>
+                <div class="list">
+                    <a href="https://www.docdroid.net/tac795w/keigo-tanaka-resume-software-engineer.pdf" target="_blank"><li style="list-style-type:none">RESUME</li></a>
+                </div>
+                <br/>
+                    <div class="list">
+                        <a href="https://github.com/keigoAlexTanaka" target="_blank">
+                        <li style="list-style-type:none">
+                            <span style="font-size:2em"><i class="fa fa-github"></i></span>
+                            Github
+                        </li>
+                        </a>
+                    </div>
+                    <div class="list">
+                        <a href="https://www.linkedin.com/in/keigoalextanaka/" target="_blank">
+                            <li style="list-style-type:none">
+                                <span style="font-size:2em"><i class="fa fa-linkedin"></i></span>
+                                LinkedIn
+                            </li>
+                        </a>
+                    </div>
+                    <div class="list">
+                        <a href="mailto:keigoalextanaka@gmail.com" target="_top">
+                            <li style="list-style-type:none">
+                                <span style="font-size:2em"><i class="fa fa-envelope"></i></span>
+                                E-Mail
+                            </li>
+                        </a>
+                    </div>
             </div>
-        </section>
-
-        <section>
-            <div class="grid-12 project project-right">
-                <div class="box">
-                    <img src="https://i.imgur.com/1flR6Qt.png" alt="">
-                    <div class="overlay1"></div>
+            <div class="bg-2">
+                <div class="header">
+                    <h2>WORKS</h2>
                 </div>
-                <div class="project-info">
-                    <p class="small-title">Website</p>
-                    <h4>Reciplease</h4>
-                    <a href="http://reciplease.surge.sh" class="project-link">See Project</a>
+                <div class="flex-row flex-wrap space-evenly">
+                    <div class="flex-row padding">
+                        <div>
+                            <img src="./img/tetris.png" alt="tetris" width="500px">
+                        </div>
+                        <div class="padding">
+                            <h3>Tetris</h3>
+                            <p>An implementation of tetris using HTML Canvas and Javascript.</p>
+                            <div class="flex-row">
+                                <div class="site">
+                                    <a target="_blank" href="http://golconda-tetris.surge.sh/">PLAY TETRIS</a>
+                                </div>
+                                <div class="site">
+                                    <a target="_blank" href="https://github.com/KeigoAlexTanaka/Golconda-Tetris">See Github Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex-row padding">
+                            <div>
+                                <img src="./img/yelp.png" alt="tetris" width="500px">
+                            </div>
+                            <div class="padding">
+                                <h3>Yelp</h3>
+                                <p>A full-stack application using Express and React and Yelp Fusion API.</p>
+                                <div class="flex-row">
+                                    <div class="site">
+                                        <a href="https://sleepy-anchorage-15837.herokuapp.com/" target="_blank">SEARCH YELP</a>
+                                    </div>
+                                    <div class="site">
+                                        <a target="_blank" href="https://github.com/KeigoAlexTanaka/Restaurant_App">See Github Repo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 </div>
-                
+                <div class="flex-row padding">
+                    <div>
+                        <img src="./img/yumble.png" alt="tetris" width="500px">
+                    </div>
+                    <div class="padding">
+                        <h3>Yumble</h3>
+                        <p>A online food order app using React.</p>
+                        <div class="flex-row">
+                            <div class="site">
+                                <a href="http://yumble.surge.sh/" target="_blank">ORDER YUMBLE</a>
+                            </div>
+                            <div class="site">
+                                <a target="_blank" href="https://github.com/catvonnegut/yumble">See Github Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-row padding">
+                    <div>
+                        <img src="./img/matrix.png" alt="tetris" width="500px">
+                    </div>
+                    <div class="padding">
+                        <h3>Matrix</h3>
+                        <p>A fan made-site for the Matrix using HTML, CSS, and JS.</p>
+                        <div class="flex-row">
+                            <div class="site">
+                                <a target="_blank" href="https://admiring-montalcini-eaa61f.netlify.com/">ENTER THE MATRIX</a>
+                            </div>
+                            <div class="site">
+                                <a target="_blank" href="https://github.com/KeigoAlexTanaka/matrix">See Github Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="flex-row space-evenly">
+                        <div class="contact">
+                            <a href="https://github.com/keigoAlexTanaka" target="_blank">
+                            <div>
+                                <span style="font-size:2em"><i class="fa fa-github"></i></span>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="contact">
+                            <a href="https://www.linkedin.com/in/keigoalextanaka/" target="_blank">
+                            <div>
+                                <span style="font-size:2em"><i class="fa fa-linkedin"></i></span>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="contact">
+                            <a href="mailto:keigoalextanaka@gmail.com" target="_top">
+                                <div>
+                                    <span style="font-size:2em"><i class="fa fa-envelope"></i></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
             </div>
-        </section>
-
-        <section>
-            <div class="grid-12 project project-left">
-                <div class="box">
-                    <img src="https://i.imgur.com/DQyBS02.png" alt="">
-                    <div class="overlay1"></div>
-                </div>
-                <div class="project-info">
-                    <p class="small-title">Website</p>
-                    <h4>Yelp Clone</h4>
-                    <a href="https://sleepy-anchorage-15837.herokuapp.com" class="project-link">See Project</a>
-                </div>
-                
-            </div>
-        </section>
-
-        <section>
-            <div class="grid-12 project project-right">
-                <div class="box">
-                    <img src="https://i.imgur.com/Uli053j.png" alt="">
-                    <div class="overlay1"></div>
-                </div>
-                <div class="project-info">
-                    <p class="small-title">Website</p>
-                    <h4>Golconda Tetris</h4>
-                    <a href="http://golconda-tetris.surge.sh" class="project-link">See Project</a>
-                </div>
-                
-            </div>
-        </section>
-
-        <section>
-            <div class="grid-12 project project-left">
-                <div class="box">
-                    <img src="https://i.imgur.com/u0W7CyG.png" alt="">
-                    <div class="overlay1"></div>
-                </div>
-                <div class="project-info">
-                    <p class="small-title">Website</p>
-                    <h4>Shia Labeouf Generator</h4>
-                    <a href="https://festive-varahamihira-92dc8f.netlify.com" class="project-link">See Project</a>
-                </div>                
-            </div>
-        </section>
-
-        <section>
-            <div class="grid-12 project project-right">
-                <div class="box">
-                    <img src="https://i.imgur.com/meiytvD.png" alt="">
-                    <div class="overlay1"></div>
-                </div>
-                <div class="project-info">
-                    <p class="small-title">Website</p>
-                    <h4>Matrix</h4>
-                    <a href="https://admiring-montalcini-eaa61f.netlify.com" class="project-link">See Project</a>
-                </div>
-                
-            </div>
-        </section>
-
-        <section>
-            <div class="grid-12 project project-left">
-                <div class="box">
-                    <img src="https://i.imgur.com/AQhtoaD.png" alt="">
-                    <div class="overlay1"></div>
-                </div>
-                <div class="project-info">
-                    <p class="small-title">Website</p>
-                    <h4>hooli</h4>
-                    <a href="https://sleepy-lovelace-755a3d.netlify.com" class="project-link">See Project</a>
-                </div>                
-            </div>
-        </section>
-
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
-
-        <script src="js/main.js"></script>
+        </div>       
     </body>
 </html>

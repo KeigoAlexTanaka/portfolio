@@ -1,122 +1,161 @@
-@import "http://use.typekit.net/ehe3cbw.css"
-
-html {
-    font-size: 63%;
+body{
+    font-size: 25px;
+    background-image: url("../img/bg.svg");
+    background-size: 100vw;
 }
 
-body {
-    font-family: europa, serf;
-    background: #ececec;
-    font-weight: 500;
+.flex-row{
+    display:flex;
 }
 
-h1 {
-    font-weight: 600;
-    font-size: 48px;
-    color: #333;
-    margin: 0;
-    line-height: 1.3;
-    letter-spacing: .0001em;
+.align-content{
+    align-content: center;
 }
 
-h4 {
-    font-weight: 600;
-    font-size: 28px;
-    color: #666;
-    margin: 0;
-    line-height: 1.3;
-    letter-spacing: .0001em;
+.space-evenly{
+    justify-content: space-evenly;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+h1{
+    text-shadow: 6px 6px 0px rgba(20,0,0,1);
+    font-size: 2rem;
+}
+
+h4{
+    font-size: 1rem;
+}
+
+
+.flex-col{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.bg-1{
+    background:rgba(20, 10, 10, 0.9);
+    color:white;
+    position: fixed;
+    top:0px;
+    left:0px;
+    width: 15vw;
+    height:100%;
+}
+.bg-2{
+    background:rgba(250, 250, 250, 0.9);
+    color:black;
+    position: relative;
+    left:15vw;
+    width:85vw;
+    height:100%;
+}
+.contact{
+    width:100%;
+    text-align: center;
+    border-top: 1px solid black;
+    padding: .5em 0;
+}
+
+.contact:hover {
+    background: rgba(255, 125, 125, 0.9);
+    cursor: pointer;
+    border-top: 0px;
+}
+
+.bg-3{
+    padding: 1em;
+}
+
+.bg-4{
+    padding: 3.1em;
 }
 
 a {
-    font-family: europa, serf;
-    font-weight: 600;
-    color: #3f3f3f;
-    letter-spacing: .001em;
-}
-
-p.top-titles {
-    font-size:10px;
-    font-weight: 500;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-}
-
-.small-title {
-    font-size:10px;
-    font-weight: 500;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-}
-
-.project-link {
     text-decoration: none;
-    border-bottom: 2px solid #b00f24;
-    padding: 5px 0;
-    font-size: 1.5rem;
+    color:inherit;
 }
 
-section {
-    height: 70vh;
-    width: 100vw;
+.list:hover{
+    color:white;
+    background: rgba(255, 125, 125, 0.9);
 }
 
-.d-grid {
-    display:grid;
-    height:100%;
-    align-content: center;
-    justify-content: center;
+.list{
+    width:100%;
+}
+
+li {
+    padding: 0.5em 1.5em;
+    font-size: 1rem;
+}
+
+.sidebar{
+    padding: 0 1em;
+}
+.header{
+    text-align: center;
+    filter: blur(.5px);
+    background:rgba(20, 10, 10, 0.7);
+    font-size: 2em;
+    color:white;
+    padding:10px;
+    text-shadow: -10px -2px 20px #e60000,
+                 10px 5px 20px #cc9601,
+                 -10px 5px 20px #0071bd;
+}
+p{
+    margin:0;
+}
+
+div{
+    padding:0;
+}
+
+.padding{
+    padding:10px;
+}
+
+.text-center{
     text-align: center;
 }
 
-.grid-12{
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-column: 1/span 12; 
+.site{
+    border: 1px solid black;
+    font-size: .7em;
+    padding: .5em;
 }
 
-.project-info {
-    background: #FFF;
-    padding: 20px 20px 30px;
+.site:hover {
+    background: black;
+    background: rgba(255, 125, 125, 0.9);
 }
 
-.project-left .box {
-    grid-column: 3/span 5;
-    grid-row:1/span 3;
-    width: 100%;
-}
-
-.project-left .project-info {
-    grid-column: 2/span 2;
-    grid-row: 2/span 1;
-}
-
-.project-right .box {
-    grid-column: 6/span 5;
-    grid-row:1/span 3;
-    width: 100%;
-}
-
-.project-right .project-info {
-    grid-column: 5/span 3;
-    grid-row: 2/span 1;
-}
-
-.box {
-    position: relative;
-    overflow: hidden;
-}
-
-img {
-    width:80%;
-}
-
-.overlay1 {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: #ececec;
-    width: 100%;
-    height: 100%;
-}
+.me:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    cursor: w-resize;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
